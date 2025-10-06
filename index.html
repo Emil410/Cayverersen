@@ -1,242 +1,493 @@
 <!DOCTYPE html>
 <html lang="az">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./front/assets/css/style.css" />
-    <script src="./front/assets/js/app.js"></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetFoodBaku</title>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./front/assets/css/style.css" />
+  <script src="./front/assets/js/app.js"></script>
+</head>
+
+<body>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="boxes_header">
-          <i class="fa-light fa-mobile"></i>
-          <div id="numbers_time">
-            <a href="tel:+994 70 550 34 34" class="number_tell_header"
-              >+994 70 550 34 34</a
-            >
-            <p>10:00 - 04:00</p>
-          </div>
-        </div>
-        <div id="center_header" style="height: 100%">
-          <div id="img_header" style="height: 100%">
-            <img
-              style="object-fit: contain; height: 100%"
-              src="./front/assets/imgs/logoo.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="boxes_header none">
-          <i class="fa-light fa-mobile"></i>
-          <div id="numbers_time">
-            <span>
-              <a href="tel:+994 70 550 34 34" class="number_tell_header"
-                >+994 70 550 34 34</a
-              >
-            </span>
-            <p>10:00 - 04:00</p>
-          </div>
-        </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">GetFoodDoner</div>
+
+        <nav class="main-nav">
+          <a href="#">HOME</a>
+          <a href="#hero_one">MENU</a>
+          <a href="#footer_look">ABOUT</a>
+        </nav>
+
+        <!-- <div class="header-actions">
+          <button class="btn btn-small btn-yellow">🛒</button>
+          <button class="btn btn-yellow">Order Online</button>
+        </div> -->
       </div>
     </header>
-    <main>
-      <section id="first_section">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="./front/assets/imgs/wine-6878013_1280.jpg"
-                alt=""
-                style="width: 100%"
-              />
-              <div class="text_swiper">
-                <h3>Çay Verərsən?</h3>
-                <p>Xoş Gəlmisiz</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./front/assets/imgs/wine-6878013_1280.jpg"
-                alt=""
-                style="width: 100%"
-              />
-              <div class="text_swiper">
-                <h3>Çay Var?</h3>
-                <p>Bəli Var!</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./front/assets/imgs/wine-6878013_1280.jpg"
-                alt=""
-                style="width: 100%"
-              />
-              <div class="text_swiper">
-                <h3>Bura Haradı?</h3>
-                <p>Bura ən sevdiyiniz yer!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-prev dsnone"></div>
-        <div class="swiper-button-next dsnone"></div>
-      </section>
-      <section id="second_section">
-        <div class="container">
-          <h1>Bizim Menyumuz</h1>
-          <div class="menyu_main">
-            <h3>
-              <p
-                class="category"
-                data-value="sorbalar"
-                href=""
-                id="burger_click"
-              >
-                Şorbalar
-              </p>
-            </h3>
-            <h3>
-              <p
-                class="category"
-                data-value="desertler"
-                href=""
-                id="desert_click"
-              >
-                Desertlər
-              </p>
-            </h3>
-            <h3>
-              <p
-                class="category"
-                data-value="setler"
-                href=""
-                id="setler_click"
-              >
-                Setlər
-              </p>
-            </h3>
-            <h3>
-              <p
-                class="category"
-                data-value="serin_icki"
-                href=""
-                id="icki_click"
-              >
-                Sərin Ickilər
-              </p>
-            </h3>
-            <h3>
-              <p class="category" data-value="caylar" href="" id="_click">
-                Çaylar
-              </p>
-            </h3>
-            <h3>
-              <p class="category" data-value="cerezler" href="" id="_click">
-                Çərəzlər
-              </p>
-            </h3>
-            <h3>
-              <p class="category" data-value="esas_yemek" href="" id="_click">
-                Əsas Yeməklər
-              </p>
-            </h3>
-            <h3>
-              <p class="category" data-value="fast_food" href="" id="_click">
-                Fast Food
-              </p>
-            </h3>
-            <h3>
-              <p class="category" data-value="salatlar" href="" id="_click">
-                Salatdar
-              </p>
-            </h3>
-            <h3>
-              <p class="category" data-value="qarnirler" href="" id="_click">
-                Qarnirlər
-              </p>
-            </h3>
-            <h3>
-              <p
-                class="category"
-                data-value="soyuq_qelyanalti"
-                href=""
-                id="qelyanalti_click"
-              >
-                Soyuq Qəlyanaltı
-              </p>
-            </h3>
-            <h3>
-              <p class="category" data-value="qelyanlar" href="" id="qelyanlar">
-                Qəlyanlar
-              </p>
-            </h3>
-          </div>
-          <div id="menu" class="burger_menyu"></div>
-        </div>
-      </section>
-    </main>
-    <footer>
+
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="eyebrow">Fast Food Restaurant</h1>
+        <p class="lead">
+          Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum
+          quam quisquam esse error unde. Tempora ex doloremque, labore sunt repellat dolore.
+        </p>
+        <button class="btn btn-yellow" id="order_now">Order Now</button>
+      </div>
+    </section>
+    <!-- ==== MENU SECTION ==== -->
+    <section class="menu-section">
       <div class="container">
-        <div id="footer_img" style="width: 100%; max-width: 400px;">
-          <img
-          style="width: 100%; object-fit: contain;"
-            src="./front/assets/imgs/logoo.png"
-            alt=""
-          />
+        <div class="offers">
+          <div class="offer-box">
+            <div class="offer-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0PfKokOCAfPNu2CFReDofGhaY32jaZIOkNg&s"
+                alt="Tasty Thursdays">
+            </div>
+            <div class="offer-text">
+              <h3>Order from Wolt</h3>
+              <p class="percent">20% <span>Off</span></p>
+              <button class="btn btn-yellow" id="order_now_wolt">Order Now 🍔</button>
+            </div>
+          </div>
+          <div class="offer-box" id="hero_one">
+            <div class="offer-img">
+              <img
+                src="https://play-lh.googleusercontent.com/x_bGdpXScwNhLlhpGjsiHAgaCjjOku6J8c9MGCIylAEvuheOnaqB3HNxW0hYOX1VbLw"
+                alt="Pizza Days">
+            </div>
+            <div class="offer-text">
+              <h3>Order from Bolt</h3>
+              <p class="percent">15% <span>Off</span></p>
+              <button class="btn btn-yellow" id="order_now_bolt">Order Now 🍕</button>
+            </div>
+          </div>
+          <div class="offer-box">
+            <div class="offer-img">
+              <img src="https://i.pinimg.com/474x/ea/ef/ca/eaefcad3d9695ae94098674193faf554.jpg" alt="Pizza Days">
+            </div>
+            <div class="offer-text">
+              <h3>Order from Whatsapp</h3>
+              <p class="percent">15% <span>Off</span></p>
+              <button class="btn btn-yellow" id="order_now_whatsapp">Order Now 🍕</button>
+            </div>
+          </div>
         </div>
-        <div id="footer_text">
-          <span>
-            <a
-              href="tel:+994 70 550 34 34"
-              class="number_tell_footer"
-            >
-              +994 70 550 34 34
-            </a>
-          </span>
-          <p>10:00 - 04:00</p>
+        <div class="menu-title">
+          <h2>Our Menu</h2>
+          <div class="menu-categories filter-buttons">
+            <button class="active">All</button>
+            <button>Doner</button>
+            <button>Pizza</button>
+            <button>Fries</button>
+            <button>Drink</button>
+            <button>Lahmacun</button>
+            <button>Shaurma</button>
+          </div>
         </div>
-        <p id="copyright">Copyright © 2024 Vincent. All Rights Reserved.</p>
+        <div class="menu-grid">
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər et corek.png" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza1</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər et basdirma.png" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər toyuq basdirma.jpeg" alt="Delicious Burger">
+            <div class="menu-info">
+              <h4>Delicious Burger3</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər toyuq corek.jpeg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər Toyuq lavaşda.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər toyuq Limuzin.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər Toyuq tombik.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər Ət lavaşda.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər ət Limuzin.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/Dönər Ət tombik .jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/et limuzin.png" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item shaurma">
+            <img src="./front/assets/imgs/Şaurma Toyuq çörəkdə.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item shaurma">
+            <img src="./front/assets/imgs/Şaurma Toyuq lavaşda.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item shaurma">
+            <img src="./front/assets/imgs/Şaurma Ət çörəkdə.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item shaurma">
+            <img src="./front/assets/imgs/Şaurma Ət lavaşda.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item doner">
+            <img src="./front/assets/imgs/toyuq limuzin .png" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item pizza">
+            <img src="./front/assets/imgs/Pizza Göbələkli.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item pizza">
+            <img src="./front/assets/imgs/Pizza Marqarita.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item pizza">
+            <img src="./front/assets/imgs/Pizza Pepperoni.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item pizza">
+            <img src="./front/assets/imgs/Pizza Qarışığ.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item pizza">
+            <img src="./front/assets/imgs/Pizza Toyuqlu.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item pizza">
+            <img src="./front/assets/imgs/Pizza Ətli .jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item lahmacun">
+            <img src="./front/assets/imgs/Lahmacun Acılı .jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item lahmacun">
+            <img src="./front/assets/imgs/Lahmacun Pendirli.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item lahmacun">
+            <img src="./front/assets/imgs/Lahmacun Qarışığ.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item lahmacun">
+            <img src="./front/assets/imgs/Lahmacun Qozlu.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item lahmacun">
+            <img src="./front/assets/imgs/Lahmacun Sadə.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item fries">
+            <img src="./front/assets/imgs/Pide Qarışığ.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item fries">
+            <img src="./front/assets/imgs/Pide Qiyməli.jpg" alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item fries">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/Fri.png" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/ayran.png" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/cola 0.3 L.jpeg" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/cola 0.5 L.jpeg" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/fanta 0.3 L.jpeg" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/fant 0.5 L.jpeg" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/sprite 0.3 L.jpeg" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <div id="item_fri">
+              <img src="./front/assets/imgs/Sprite 0.5L.jpeg" alt="Delicious Pizza">
+            </div>
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <!-- <div class="menu-item item pizza">
+            <img
+              src="./front/assets/imgs/Dönər et basdirma.png"
+              alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza2</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          
+          <div class="menu-item item fries">
+            <img
+              src="./front/assets/imgs/Dönər toyuq basdirma.jpeg"
+              alt="Delicious Burger">
+            <div class="menu-info">
+              <h4>Delicious Burger3</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <img
+              src="./front/assets/imgs/Dönər toyuq corek.jpeg"
+              alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div>
+          <div class="menu-item item drink">
+            <img
+              src="./front/assets/imgs/Dönər Toyuq lavaşda.jpg"
+              alt="Delicious Pizza">
+            <div class="menu-info">
+              <h4>Delicious Pizza4</h4>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit. Veniam debitis quaerat officiis
+                quasi cupiditate quo, quisquam velit.</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- ==== FOOTER ==== -->
+    <footer class="footer" id="footer_look">
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p>📍 Location - Baku</p>
+          <p>📞 Call +994 509798585</p>
+          <p>✉️ getdoofrealfood@gmail.com</p>
+        </div>
+
+        <div class="footer-col center">
+          <h2 class="logo">GetFoodBaku</h2>
+          <p>
+            Very tasty and high-quality food! Everything is fresh, flavorful, and made with care. You can feel every
+            ingredient, and it makes you want to come back again.
+          </p>
+          <div class="social">
+            <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="fb"></a>
+            <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="tw"></a>
+            <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="ig"></a>
+            <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="ln"></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Opening Hours</h3>
+          <p>Everyday</p>
+          <p>10:30 AM – 5.00 AM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 GetFoodBaku
       </div>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: "auto",
-        spaceBetween: 5,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          768: {
-            spaceBetween: 30,
-          },
-          1024: {
-            spaceBetween: 50,
-          },
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+
     <script type="module" src="./front/assets/js/data.js"></script>
   </body>
+
 </html>

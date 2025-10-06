@@ -72,7 +72,7 @@ let categories = document.querySelectorAll(".category");
   category.addEventListener("click", (e) => {
     console.log(category);
     e.preventDefault();
-    menu.innerHTML="";
+    menu.innerHTML = "";
     for (let foodId in foods) {
       let food = foods[foodId];
       console.log(food);
@@ -96,5 +96,56 @@ let categories = document.querySelectorAll(".category");
     }
   });
 });
+const button = document.getElementById('order_now');
+const offersSection = document.querySelector('.menu-section');
 
+button.addEventListener('click', () => {
+  offersSection.scrollIntoView({ behavior: 'smooth' });
+});
+const buttonWolt = document.getElementById('order_now_wolt');
 
+buttonWolt.addEventListener('click', () => {
+  window.location.href = 'https://wolt.com/az/aze/baku/search?q=getfood&target=venues';
+});
+const buttonBolt = document.getElementById('order_now_bolt');
+
+buttonBolt.addEventListener('click', () => {
+  window.location.href = 'https://food.bolt.eu/ru-RU/335-baku?searchQuery=getfood';
+});
+const whatsappButton = document.getElementById('order_now_whatsapp');
+
+whatsappButton.addEventListener('click', () => {
+  const phoneNumber = '994509798585';
+  const message = encodeURIComponent('Здравствуйте! Хочу сделать заказ.');
+  window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.filter-buttons button');
+  const items = document.querySelectorAll('.menu-item');
+
+  // Изначально показываем все
+  items.forEach(item => item.classList.add('show'));
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Убираем активность со всех кнопок
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.textContent.toLowerCase();
+
+      items.forEach(item => {
+        if (filter === 'all') {
+          item.classList.add('show'); // Показываем все
+        } else {
+          // Показываем только совпадающее, скрываем остальные
+          if (item.classList.contains(filter)) {
+            item.classList.add('show');
+          } else {
+            item.classList.remove('show');
+          }
+        }
+      });
+    });
+  });
+});
