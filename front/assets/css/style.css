@@ -111,7 +111,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('/Cayverersen/front/assets/imgs/Doner_toyuq_Limuzin.jpg') center center/cover no-repeat;
+  background: url('/front/assets/imgs/Doner_toyuq_Limuzin.jpg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
