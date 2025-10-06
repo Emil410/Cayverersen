@@ -6,9 +6,7 @@
   box-sizing: border-box;
   font-family: "PT Sans Narrow", sans-serif;
 }
-area, base, basefont, datalist, head, link, meta, noembed, noframes, param, rp, script, style, template, title {
-  display: flex!;
-}
+
 
 body {
   -webkit-overflow-scrolling: touch;
